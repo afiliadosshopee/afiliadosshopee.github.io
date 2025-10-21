@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página inicial modelo com Tailwind, Bootstrap Icons e estrutura organizada.">
+  <title>Home - Meu Site</title>
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- CSS Puro -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+
+  <!-- Cabeçalho -->
+  <header class="bg-blue-700 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Meu Site</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#" class="hover:text-gray-200 transition">Home</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Sobre</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Serviços</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="flex-grow container mx-auto p-6 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Bem-vindo à Home!</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-600">
+      Esta é a estrutura base de uma página inicial, pronta para receber seu conteúdo.
+      Você pode adicionar componentes, seções e scripts personalizados com facilidade.
+    </p>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-blue-800 text-white mt-8">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
+      <p class="text-sm">&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+      <div class="flex gap-4 text-2xl">
+        <a href="#" class="hover:text-gray-300"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

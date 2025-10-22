@@ -1,229 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>O Mundo e Suas Histórias — Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Mundo e Suas Histórias</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Tailwind custom colors
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            history: {
-              50: '#fbf7f5',
-              100: '#f6ede9',
-              200: '#e9dbd4',
-              400: '#b9876b',
-              600: '#704033',
-              800: '#4a2319'
-            }
-          }
-        }
-      }
-    }
-  </script>
 </head>
-<body class="bg-history-50 text-gray-900 antialiased leading-relaxed">
-  <!-- Top bar / Header -->
-  <header class="bg-history-800 text-history-50 shadow-md sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between py-4">
-        <div class="flex items-center gap-4">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-md bg-history-600 flex items-center justify-center shadow-inner">
-              <svg class="w-7 h-7 text-history-50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                <path d="M3 6h18M6 6v12a3 3 0 003 3h6a3 3 0 003-3V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <a href="#" class="text-xl font-semibold tracking-wide text-history-50">O Mundo e Suas Histórias</a>
-              <div class="text-xs text-history-100">História, narrativas e curiosidades</div>
-            </div>
-          </div>
-        </div>
-
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#" class="hover:text-yellow-300">Início</a>
-          <a href="#articles" class="hover:text-yellow-300">Artigos</a>
-          <a href="#timeline" class="hover:text-yellow-300">Linha do Tempo</a>
-          <a href="#curiosidades" class="hover:text-yellow-300">Curiosidades</a>
-          <a href="#contato" class="hover:text-yellow-300">Contato</a>
-        </nav>
-
-        <div class="flex items-center gap-3">
-          <form class="hidden md:block">
-            <label for="site-search" class="sr-only">Buscar</label>
-            <div class="relative">
-              <input id="site-search" type="search" placeholder="Buscar no site..." class="w-56 px-3 py-2 rounded-md text-sm bg-history-50 ring-1 ring-transparent focus:ring-2 focus:ring-yellow-300" />
-            </div>
-          </form>
-
-          <button class="md:hidden p-2 rounded-lg bg-history-600 text-history-50" aria-label="Abrir menu">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 12h18M3 6h18M3 18h18" />
-            </svg>
-          </button>
-        </div>
-      </div>
+<body class="bg-[#f4f1ee] text-gray-800 font-serif">
+  <!-- Cabeçalho -->
+  <header class="bg-[#3b2f2f] text-white py-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+      <h1 class="text-3xl font-bold tracking-wide">📜 O Mundo e Suas Histórias</h1>
+      <nav class="space-x-8 text-lg font-medium">
+        <a href="#" class="hover:text-yellow-400 transition">Início</a>
+        <a href="#" class="hover:text-yellow-400 transition">Civilizações</a>
+        <a href="#" class="hover:text-yellow-400 transition">Ciência & Filosofia</a>
+        <a href="#" class="hover:text-yellow-400 transition">Contato</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Main layout -->
-  <main class="max-w-7xl mx-auto px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
+  <!-- Introdução -->
+  <section class="max-w-6xl mx-auto mt-10 px-6 text-justify">
+    <h2 class="text-3xl text-[#3b2f2f] font-semibold mb-4">O Pêndulo de Foucault — A prova que o mundo gira</h2>
+    <p class="leading-relaxed text-lg mb-6">
+      O experimento de Léon Foucault não apenas demonstrou o movimento da Terra, como também marcou a união entre ciência e filosofia — um lembrete de que a busca pelo conhecimento move o mundo. E, assim como o pêndulo oscila com elegância, a curiosidade humana nunca cessa.
+    </p>
+  </section>
 
-    <!-- Feed / Conteúdo principal (8 colunas) -->
-    <section class="lg:col-span-8 space-y-8">
+  <!-- Banner entre seções -->
+  <section class="max-w-6xl mx-auto my-10 px-6">
+    <a href="https://amzn.to/48IflPU" target="_blank" rel="noopener noreferrer">
+      <img src="https://i.postimg.cc/hvFnYpJV/Whats-App-Image-2025-10-22-at-11-00-54.jpg" alt="Banner O Pêndulo de Foucault" class="w-full rounded-xl shadow-lg hover:opacity-90 transition duration-300">
+    </a>
+  </section>
 
-      <!-- Featured small hero (não em destaque) -->
-      <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
-        <div class="p-6 md:flex md:items-center md:gap-6">
-          <div class="flex-1">
-            <h2 class="text-2xl font-bold text-history-800">O Pêndulo de Foucault: Ciência, Simbolismo e Literatura</h2>
-            <p class="mt-3 text-gray-700">Breve reflexão sobre como um experimento científico do século XIX se transformou em metáfora literária e cultural. Exploramos a física por trás do pêndulo e as ressonâncias que ligam ciência e narrativas humanas.</p>
-            <p class="mt-4 text-sm text-gray-600">Por <strong>Redação</strong> · <time datetime="2025-10-22">22 out 2025</time></p>
-          </div>
-
-          <div class="mt-4 md:mt-0 w-full md:w-56 h-36 rounded-lg overflow-hidden flex-shrink-0">
-            <img src="https://i.postimg.cc/hvFnYpJV/Whats-App-Image-2025-10-22-at-11-00-54.jpg" alt="Capa: O Pêndulo de Foucault" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </article>
-
-      <!-- Grid de artigos -->
-      <div id="articles" class="grid sm:grid-cols-2 gap-6">
-        <article class="bg-white rounded-2xl p-5 shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-history-800">A invenção do pêndulo de Foucault</h3>
-          <p class="mt-2 text-gray-700 text-sm">Como Foucault demonstrou o movimento da Terra usando um experimento elegante — e por que isso importou para a ciência do século XIX.</p>
-        </article>
-
-        <article class="bg-white rounded-2xl p-5 shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-history-800">Leituras que dialogam com o experimento</h3>
-          <p class="mt-2 text-gray-700 text-sm">Livros e ensaios que ampliam as implicações filosóficas do pêndulo — da física à metafísica.</p>
-        </article>
-
-        <article class="bg-white rounded-2xl p-5 shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-history-800">Instrumentos científicos do século XIX</h3>
-          <p class="mt-2 text-gray-700 text-sm">Uma curadoria de instrumentos que revolucionaram a observação do mundo natural.</p>
-        </article>
-
-        <article class="bg-white rounded-2xl p-5 shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-history-800">O impacto cultural das demonstrações públicas</h3>
-          <p class="mt-2 text-gray-700 text-sm">Como as demonstrações científicas públicas moldaram a opinião e a curiosidade da sociedade.</p>
-        </article>
-      </div>
-
-      <!-- Timeline compact -->
-      <section id="timeline" class="bg-white rounded-2xl p-6 shadow">
-        <h3 class="text-xl font-semibold text-history-800">Linha do Tempo — Momentos chave</h3>
-        <ol class="mt-4 space-y-4 text-sm text-gray-700">
-          <li class="flex gap-4">
-            <div class="flex-shrink-0 w-2 h-2 bg-history-600 rounded-full mt-1"></div>
-            <div>
-              <div class="font-semibold">1851</div>
-              <div class="text-sm text-gray-600">Primeira demonstração do pêndulo de Foucault em Paris.</div>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <div class="flex-shrink-0 w-2 h-2 bg-history-600 rounded-full mt-1"></div>
-            <div>
-              <div class="font-semibold">1988</div>
-              <div class="text-sm text-gray-600">Publicação do romance que leva o mesmo nome — uma obra que mistura erudição e conjeturas.</div>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <div class="flex-shrink-0 w-2 h-2 bg-history-600 rounded-full mt-1"></div>
-            <div>
-              <div class="font-semibold">Hoje</div>
-              <div class="text-sm text-gray-600">O pêndulo segue como símbolo em museus, literatura e cultura popular.</div>
-            </div>
-          </li>
-        </ol>
-      </section>
-
+  <!-- Conteúdo principal em colunas -->
+  <main class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6">
+    <!-- Coluna principal -->
+    <section class="md:col-span-2 bg-white p-8 rounded-xl shadow-md">
+      <h3 class="text-2xl font-semibold text-[#3b2f2f] mb-4">História e Simbolismo</h3>
+      <p class="leading-relaxed mb-4">
+        O pêndulo é mais do que um simples experimento físico — ele é um símbolo da persistência humana em entender o universo. Instalado pela primeira vez no Panthéon de Paris em 1851, o instrumento encantou o público e fez o mundo olhar para o movimento da Terra com novos olhos.
+      </p>
+      <p class="leading-relaxed mb-4">
+        O romance <strong>“O Pêndulo de Foucault”</strong>, de Umberto Eco, leva essa simbologia a outro patamar. Misturando sociedades secretas, filosofia e conspirações, Eco transforma o conhecimento em enigma — e a leitura em uma jornada intelectual.
+      </p>
+      <p class="leading-relaxed">
+        É uma narrativa densa e provocante, perfeita para quem ama história, mistério e o poder das ideias.
+      </p>
     </section>
 
-    <!-- Barra lateral (4 colunas) -->
-    <aside class="lg:col-span-4 space-y-6">
-
-      <!-- Search card -->
-      <div class="bg-white p-5 rounded-2xl shadow">
-        <label for="search-2" class="block text-xs font-medium text-gray-600">Buscar no portal</label>
-        <div class="mt-3">
-          <input id="search-2" type="text" placeholder="Ex.: pêndulo, Egito, Roma" class="w-full px-4 py-2 rounded-lg ring-1 ring-gray-200 focus:ring-2 focus:ring-history-400" />
-        </div>
-      </div>
-
-      <!-- Small banner placed between sections and columns -->
-      <div class="bg-white p-3 rounded-2xl shadow flex items-center gap-4">
-        <a href="https://amzn.to/48IflPU" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center gap-3 w-full">
-          <img src="https://i.postimg.cc/hvFnYpJV/Whats-App-Image-2025-10-22-at-11-00-54.jpg" alt="Banner do livro O Pêndulo de Foucault" class="w-24 h-20 object-cover rounded-md flex-shrink-0">
-          <div class="flex-1">
-            <p class="text-sm font-semibold text-history-800">O Pêndulo de Foucault</p>
-            <p class="text-xs text-gray-600 mt-1">Romance de Umberto Eco — uma leitura que dialoga com ciência e mistério.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Curiosidades / cards -->
-      <div class="bg-white p-5 rounded-2xl shadow">
-        <h4 class="text-lg font-semibold text-history-800">Curiosidades</h4>
-        <ul class="mt-3 text-sm text-gray-700 space-y-3">
-          <li>O pêndulo mais longo do mundo tem mais de 80 metros.</li>
-          <li>Foucault apresentava demonstrações públicas para popularizar a ciência.</li>
-          <li>Museus de ciência ainda mantêm pêndulos em exibição permanente.</li>
-        </ul>
-      </div>
-
-      <!-- Newsletter compact -->
-      <div class="bg-white p-5 rounded-2xl shadow">
-        <h4 class="text-sm font-semibold text-history-800">Newsletter</h4>
-        <p class="text-xs text-gray-600 mt-2">Receba artigos curados por e-mail — sem spam.</p>
-        <form class="mt-3">
-          <label for="email" class="sr-only">Seu e-mail</label>
-          <input id="email" type="email" placeholder="seu@exemplo.com" class="w-full px-3 py-2 rounded-lg ring-1 ring-gray-200 focus:ring-2 focus:ring-history-400 text-sm" />
-          <button type="submit" class="hidden">Inscrever</button>
-        </form>
-      </div>
-
+    <!-- Coluna lateral -->
+    <aside class="bg-white p-8 rounded-xl shadow-md">
+      <h4 class="text-xl font-semibold text-[#3b2f2f] mb-4">Outras Grandes Histórias</h4>
+      <ul class="space-y-3 text-lg">
+        <li><a href="#" class="text-[#6b4b3e] hover:underline">📖 A queda de Constantinopla</a></li>
+        <li><a href="#" class="text-[#6b4b3e] hover:underline">🗺️ A Rota da Seda e o nascimento do comércio global</a></li>
+        <li><a href="#" class="text-[#6b4b3e] hover:underline">🏺 Os segredos de Alexandria</a></li>
+        <li><a href="#" class="text-[#6b4b3e] hover:underline">⚙️ A Revolução Científica</a></li>
+      </ul>
     </aside>
-
   </main>
 
-  <!-- Rodapé robusto -->
-  <footer class="border-t border-gray-200 bg-history-800 text-history-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div>
-        <h5 class="font-semibold">O Mundo e Suas Histórias</h5>
-        <p class="text-sm text-history-100 mt-2">Portal de divulgação histórica: artigos, curiosidades e leituras recomendadas.</p>
-      </div>
-      <div>
-        <h5 class="font-semibold">Navegação</h5>
-        <ul class="mt-2 text-sm text-history-100 space-y-2">
-          <li><a href="#" class="hover:underline">Artigos</a></li>
-          <li><a href="#" class="hover:underline">Linha do Tempo</a></li>
-          <li><a href="#" class="hover:underline">Curiosidades</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold">Contato</h5>
-        <p class="text-sm text-history-100 mt-2">email@omundoe suashistorias.example</p>
-        <div class="flex gap-3 mt-3">
-          <a href="#" class="w-8 h-8 rounded bg-history-600 flex items-center justify-center" aria-label="Instagram">
-            <svg class="w-4 h-4 text-history-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 11.37a4 4 0 11-4.94-4.94"/></svg>
-          </a>
-          <a href="#" class="w-8 h-8 rounded bg-history-600 flex items-center justify-center" aria-label="Facebook">
-            <svg class="w-4 h-4 text-history-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-history-900 text-history-200 text-xs text-center py-3">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">&copy; 2025 O Mundo e Suas Histórias — Todos os direitos reservados.</div>
+  <!-- Rodapé -->
+  <footer class="bg-[#3b2f2f] text-gray-200 mt-16 py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p>&copy; 2025 O Mundo e Suas Histórias — Inspirando mentes curiosas através do tempo.</p>
+      <p class="text-sm mt-2">Siga-nos e continue explorando as histórias que moldaram o mundo.</p>
     </div>
   </footer>
-
 </body>
 </html>
